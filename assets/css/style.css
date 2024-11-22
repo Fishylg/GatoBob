@@ -1,0 +1,117 @@
+/* Estilo para o body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* Para permitir o posicionamento absoluto dos elementos */
+    background: url('./assets/img/james_bob.png') no-repeat center center;
+    background-size: cover; /* Garante que a imagem de fundo ocupe 100% da tela */
+}
+
+/* Imagem de fundo */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* A imagem fica atrás do conteúdo */
+}
+
+/* Container de login */
+.login-container {
+    background: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px; /* Limita a largura máxima do formulário */
+    margin: 20px; /* Espaçamento nas laterais */
+}
+
+/* Estilo para os campos de input e o botão */
+.login-container h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #555;
+    margin-top: 30px;
+}
+
+.login-container input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão de login */
+.login-container button {
+    width: 250px;
+    padding: 18px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Social login - Ícones */
+.social-login {
+    display: flex; /* Alinha os ícones horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 10px; /* Espaço entre os ícones */
+    margin-top: 30px; /* Espaço entre o texto e os ícones */
+    margin-bottom: 30px; /* Espaço abaixo dos ícones */
+}
+
+.icon-wrapper {
+    display: inline-block;
+    background-color: #F7F7F7; /* Fundo branco */
+    width: 90px; /* Largura do quadrado */
+    height: 60px; /* Altura do quadrado */
+    margin: 0 10px; /* Espaço entre os ícones */
+    border-radius: 10px; /* Borda levemente arredondada */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Efeito ao passar o mouse */
+}
+
+/* Efeito de aumento ao passar o mouse sobre o ícone */
+.icon-wrapper:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.icon-wrapper img {
+    width: 30px; /* Ajusta o tamanho do ícone */
+    height: 30px;
+}
+
+/* Alinha o texto "Ou continue com" à esquerda */
+.left-align {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
